@@ -25,6 +25,7 @@
           colors: {
             clifford: "#da373d",
             green_primary: "#ABEF5F",
+            green_sec: "#ABEF5F80",
           },
         },
       },
@@ -34,9 +35,12 @@
 
 <body class="font-manrope">
   <header class="md:w-[85%] mx-auto">
+
+    <!-- Navbar Section -->
+
     <nav class="flex items-center  justify-between mt-2 md:mt-7">
       <div class="flex lg:gap-2 items-center hover:cursor-pointer">
-        <div class="border rounded-[50%] bg-green_primary w-7 h-7 text-center">
+        <div class="rounded-[50%] bg-green_primary w-7 h-7 text-center">
           <i class="fa-solid fa-arrow-right" style="rotate: -45deg"></i>
         </div>
         <div>
@@ -45,7 +49,7 @@
       </div>
 
       <div class="hidden md:none lg:block hover:cursor-pointer">
-        <ul class="flex gap-4 items-center text-1sm">
+        <ul class="flex gap-2 items-center text-1sm">
           <li><a class="font-bold">Home</a></li>
           <li><a>Services</a></li>
           <li><a>Portfolio</a></li>
@@ -53,25 +57,24 @@
           <li><a>Contact Us</a></li>
         </ul>
       </div>
-      <div class="items-center gap-4 hidden md:flex">
-        <a class="hover:cursor-pointer">
-          <div class="border rounded-[50%] bg-white w-7 h-7 text-center">
+      <div class="items-center gap-2 hidden md:flex">
+        <a class="btn border rounded-[100%] bg-white h-[66px] w-[66px]">
+          <div>
             <i class="fa-solid fa-magnifying-glass text-sm"></i>
           </div>
         </a>
-        <a class="hover:cursor-pointer">
-          <div class="border rounded-[50%] bg-white w-7 h-7 text-center">
+        <a class="btn border rounded-[100%] bg-white h-[66px] w-[66px]">
+          <div>
             <i class="fa-solid fa-cart-shopping text-sm"></i>
           </div>
         </a>
-        <a>
-          <div
-            class="flex flex-row-reverse items-center hover:cursor-pointer hover:bg-green-400 bg-green_primary border rounded-full md:py-1 md:px-2 lg:py-2 lg:px-3">
-            <div class="border rounded-[50%] bg-black w-7 h-7 text-center">
+        <a class="btn w-[250px] hover:bg-green-400 bg-green_primary">
+          <div class="flex flex-row-reverse">
+            <div class="flex justify-center items-center rounded-[50%] bg-black w-7 h-7">
               <i class="fa-solid fa-arrow-right" style="rotate: -45deg; color: white"></i>
             </div>
             <div>
-              <h3 class="font-bold lg:text-lg">Book Consult</h3>
+              <h3 class="font-bold text-lg">Book Consult</h3>
             </div>
           </div>
         </a>
@@ -101,6 +104,32 @@
       </div>
 
     </nav>
+
+    <!-- Banner Section -->
+    <section>
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col text-center">
+          <div>
+            <img src="assets/banner.png" alt="">
+          </div>
+          <div class="">
+            <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+            <p class="py-6">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+              wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <div class="btn flex-row-reverse hover:bg-green-400 bg-green_sec">
+              <div class="flex justify-center items-center rounded-[50%] bg-green_primary w-7 h-7">
+                <i class="fa-solid fa-arrow-right" style="rotate: -45deg;"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg">View Details</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </header>
   <main></main>
   <footer></footer>
