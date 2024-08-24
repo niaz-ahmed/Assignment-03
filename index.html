@@ -34,10 +34,10 @@
 </head>
 
 <body class="font-manrope">
-  <header class="md:w-[85%] mx-auto">
+  <header class="container mx-auto">
     <!-- Navbar Section -->
-    <nav class="flex items-center justify-between mt-2 md:mt-7">
-      <a class="flex items-center hover:cursor-pointer">
+    <nav class="flex items-center justify-between mt-2 md:mt-7 mx-2 md:mx">
+      <a class="flex items-center hover:cursor-pointer ">
           <i class="fa-solid fa-arrow-right p-2 rounded-full bg-green_primary" style="rotate: -45deg"></i>
         
       
@@ -47,11 +47,11 @@
 
       <div class="hidden lg:block hover:cursor-pointer">
         <ul class="flex gap-2 items-center text-1sm">
-          <li><a class="font-extrabold">Home</a></li>
-          <li><a>Services</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Blogs</a></li>
-          <li><a>Contact Us</a></li>
+          <li><a class="hover:font-extrabold">Home</a></li>
+          <li><a class="hover:font-extrabold">Services</a></li>
+          <li><a class="hover:font-extrabold">Portfolio</a></li>
+          <li><a class="hover:font-extrabold">Blogs</a></li>
+          <li><a class="hover:font-extrabold">Contact Us</a></li>
         </ul>
       </div>
       <div class="items-center gap-2 hidden md:flex">
@@ -81,11 +81,11 @@
             <i class="fa-solid fa-bars"></i>
           </div>
           <ul tabindex="0" class="dropdown-content menu bg-slate-200 rounded-box z-[1] w-52 p-2 shadow">
-            <li><a class="font-extrabold">Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
+            <li><a class="hover:font-extrabold">Home</a></li>
+            <li><a class="hover:font-extrabold">Services</a></li>
+            <li><a class="hover:font-extrabold">Portfolio</a></li>
+            <li><a class="hover:font-extrabold">Blogs</a></li>
+            <li><a class="hover:font-extrabold">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -95,11 +95,11 @@
           <i class="fa-solid fa-bars"></i>
         </div>
         <ul tabindex="0" class="dropdown-content menu bg-slate-200 rounded-box z-[1] w-52 p-2 shadow">
-          <li><a class="font-extrabold">Home</a></li>
-          <li><a>Services</a></li>
-          <li><a>Portfolio</a></li>
-          <li><a>Blogs</a></li>
-          <li><a>Contact Us</a></li>
+          <li><a class="hover:font-extrabold">Home</a></li>
+          <li><a class="hover:font-extrabold">Services</a></li>
+          <li><a class="hover:font-extrabold">Portfolio</a></li>
+          <li><a class="hover:font-extrabold">Blogs</a></li>
+          <li><a class="hover:font-extrabold">Contact Us</a></li>
         </ul>
       </div>
     </nav>
@@ -344,7 +344,7 @@
   </main>
   <footer class="bg-stone-800">
     <!-- footer section -->
-    <section class="flex flex-col items-center gap-5 justify-center py-20 w-3/5 mx-auto">
+    <section class="flex flex-col items-center gap-5 justify-center py-20 w-[90%] md:w-3/5 mx-auto">
       <div class="text-center">
         <a class="hover:cursor-pointer">
           <i class="fa-solid fa-arrow-right p-2 rounded-full bg-green_primary" style="rotate: -45deg"></i>
@@ -361,15 +361,15 @@
       </div>
 
       <div class="w-full">
-        <ul class="flex gap-5 items-center justify-between text-1sm text-gray-300">
-          <li><a class="font-extrabold">Home</a></li>
+        <ul class="flex flex-col md:flex-row gap-5 items-center justify-between text-1sm text-gray-300">
+          <li><a>Home</a></li>
           <li><a>Services</a></li>
           <li><a>Portfolio</a></li>
           <li><a>Blogs</a></li>
           <li><a>Contact Us</a></li>
         </ul>
       </div>
-      <div class="items-center gap-2 hidden md:flex my-5">
+      <div class="items-center gap-2 flex my-5">
         <a class="btn w-[250px] hover:bg-green-400 bg-green_primary">
           <div class="flex flex-row-reverse">
             <div class="flex justify-center items-center rounded-[50%] bg-black w-7 h-7">
